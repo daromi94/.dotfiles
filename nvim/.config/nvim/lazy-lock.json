@@ -3,6 +3,10 @@
     "branch": "main",
     "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9"
   },
+  "nvim-treesitter": {
+    "branch": "master",
+    "commit": "cc2c11c403a9143827501223b4ee64432dcaf246"
+  },
   "plenary.nvim": {
     "branch": "master",
     "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d"
