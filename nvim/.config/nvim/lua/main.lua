@@ -10,6 +10,3 @@ vim.opt.list = true
 
 -- Highlight the current line
 vim.opt.cursorline = true
-
--- Save undo history
-vim.opt.undofile = true
