@@ -10,3 +10,6 @@ vim.opt.list = true
 
 -- Highlight the current line
 vim.opt.cursorline = true
+
+-- Disable line wrapping
+vim.wo.wrap = false
