@@ -1,3 +1,6 @@
+[user]
+	email = davromero07@gmail.com
+	name = daromi94
 [alias]
 	last = log -1 HEAD --stat
 [core]
@@ -16,6 +19,3 @@
 	autoSetupRemote = true
 [pull]
 	rebase = true
-[user]
-	email = davromero07@gmail.com
-	name = daromi94
