@@ -1,0 +1,21 @@
+[alias]
+	last = log -1 HEAD --stat
+[core]
+	autocrlf = input
+	compression = 0
+	editor = nvim
+[fetch]
+	prune = true
+[help]
+	autoCorrect = 1
+[http]
+	postBuffer = 524288000
+[pack]
+	window = 1
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[user]
+	email = davromero07@gmail.com
+	name = daromi94
