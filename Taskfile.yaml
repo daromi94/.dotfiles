@@ -1,5 +1,8 @@
 version: "3"
 
+vars:
+  BREWFILE_PATH: os/mac/Brewfile
+
 tasks:
   default:
     cmds:
@@ -13,6 +16,10 @@ tasks:
     cmds:
       - stow zsh
 
-  os:mac:brew:
+  os:mac:brew:import:
     cmds:
-      - brew bundle --file os/mac/Brewfile
+      - brew bundle --file {{.BREWFILE_PATH}} -f
+
+  os:mac:brew:export:
+    cmds:
+      - brew bundle dump --file {{.BREWFILE_PATH}} -f
