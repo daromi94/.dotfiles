@@ -1,3 +1,3 @@
-export DOTFILES_PATH="$HOME/.dotfiles"
+export DOTFILES_DIR="$HOME/.dotfiles"
 
-export PATH="$PATH:$DOTFILES_PATH/bin"
+export PATH="$PATH:$DOTFILES_DIR/bin"

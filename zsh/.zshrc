@@ -19,7 +19,7 @@ else
 fi
 
 # aliases
-readonly ALIASES_PATH="$DOTFILES_PATH/zsh/.aliases"
+readonly ALIASES_PATH="$DOTFILES_DIR/zsh/.aliases"
 
 if [[ -f "$ALIASES_PATH" ]]; then
 	source "$ALIASES_PATH"

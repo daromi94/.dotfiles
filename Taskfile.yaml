@@ -1,0 +1,18 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task -a
+
+  git:
+    cmds:
+      - stow git
+
+  zsh:
+    cmds:
+      - stow zsh
+
+  os:mac:brew:
+    cmds:
+      - brew bundle --file os/mac/Brewfile
