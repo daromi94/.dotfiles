@@ -1,7 +1,17 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-selected=$(ps axc | awk 'NR > 1' | awk '{print substr($0,index($0,$5))}' | sort -u | fzf)
+readonly PROGRAM="xlsof"
 
-if [[ -n "$selected" ]]; then
-    lsof -c "$selected"
+process=$(ps axc | awk 'NR > 1' | awk '{print substr($0,index($0,$5))}' | sort -u | fzf)
+
+if [[ -z "$process" ]]; then
+    echo "$PROGRAM: no process selected" >&2
+    exit 64
 fi
+
+if ! lsof -c "$process"; then
+    echo "$PROGRAM: failed to list open files for process '$process'" >&2
+    exit 70
+fi
+
+exit 0
