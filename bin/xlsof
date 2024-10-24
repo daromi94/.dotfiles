@@ -10,7 +10,7 @@ if [[ -z "$process" ]]; then
 fi
 
 if ! lsof -c "$process"; then
-    echo "$PROGRAM: failed to list open files for process '$process'" >&2
+    echo "$PROGRAM: $process: failed to list open files" >&2
     exit 70
 fi
 
