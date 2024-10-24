@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+readonly PROGRAM="xgls"
+
+if ! git status >/dev/null 2>&1; then
+    echo "$PROGRAM: not a git repository (or any of the parent directories)"
+    exit 128
+fi
+
+git log --format="%h^%cr^%s" | column -t -s "^" | fzf | awk '{print $1}' | xargs git show
