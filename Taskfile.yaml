@@ -5,21 +5,16 @@ vars:
 
 tasks:
   default:
-    cmds:
-      - task -a
+    cmd: task -a
 
   git:
-    cmds:
-      - stow git
+    cmd: stow git
 
   zsh:
-    cmds:
-      - stow zsh
+    cmd: stow zsh
 
   os:mac:brew:import:
-    cmds:
-      - brew bundle --file {{.BREWFILE_PATH}} -f
+    cmd: brew bundle --file {{.BREWFILE_PATH}} -f
 
   os:mac:brew:export:
-    cmds:
-      - brew bundle dump --file {{.BREWFILE_PATH}} -f
+    cmd: brew bundle dump --file {{.BREWFILE_PATH}} -f
