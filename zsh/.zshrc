@@ -1,7 +1,7 @@
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 
-readonly ZSH_THEME="robbyrussell"
+readonly ZSH_THEME='robbyrussell'
 
 readonly plugins=(git)
 

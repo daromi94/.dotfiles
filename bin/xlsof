@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-readonly PROGRAM="xlsof"
+readonly PROGRAM='xlsof'
 
 process=$(ps axc | awk 'NR > 1' | awk '{print substr($0,index($0,$5))}' | sort -u | fzf)
 
