@@ -4,3 +4,6 @@ alias dot='cd $DOTFILES_DIR'
 
 # git
 alias gs='xgls'
+
+# java
+alias j='jshell'
