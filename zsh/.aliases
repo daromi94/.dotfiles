@@ -5,5 +5,8 @@ alias dot='cd $DOTFILES_DIR'
 # git
 alias gs='xgls'
 
+# tmux
+alias t='tmux'
+
 # java
 alias j='jshell'
