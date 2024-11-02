@@ -3,6 +3,7 @@ alias ll='ls -la'
 alias dot='cd $DOTFILES_DIR'
 
 # git
+alias gs='git status'
 alias gfs='xgfs'
 alias gh='open https://github.com/$(git config --global user.name)'
 
