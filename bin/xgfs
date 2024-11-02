@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-readonly PROGRAM='xgls'
+readonly PROGRAM='xgfs'
 
 if ! git status >/dev/null 2>&1; then
     echo "$PROGRAM: not a git repository (or any of the parent directories)" >&2
