@@ -4,6 +4,7 @@ alias dot='cd $DOTFILES_DIR'
 
 # git
 alias gfs='xgfs'
+alias gh='open https://github.com/$(git config --global user.name)'
 
 # tmux
 alias t='tmux'
