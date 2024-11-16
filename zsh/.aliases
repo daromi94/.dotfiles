@@ -12,3 +12,6 @@ alias t='tmux'
 
 # java
 alias j='jshell'
+
+# k8s
+alias k='kubectl'
