@@ -9,6 +9,9 @@
       },
       "homebrew/bundle": {
         "revision": "ffd64496166d710c4f0eaf220d5c18744ec1a4f6"
+      },
+      "hashicorp/tap": {
+        "revision": "db0559a6ecbd98534caa6da6bf5df8a775e2937a"
       }
     },
     "brew": {
@@ -771,6 +774,10 @@
             }
           }
         }
+      },
+      "hashicorp/tap/terraform": {
+        "version": "1.9.8",
+        "bottle": false
       }
     },
     "vscode": {
