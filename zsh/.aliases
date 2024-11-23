@@ -15,3 +15,6 @@ alias j='jshell'
 
 # k8s
 alias k='kubectl'
+
+# terraform
+alias tf='terraform'
