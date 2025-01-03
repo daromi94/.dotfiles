@@ -7,11 +7,17 @@ tasks:
   default:
     cmd: task -a
 
+  zsh:
+    cmd: stow zsh
+
   git:
     cmd: stow git
 
-  zsh:
-    cmd: stow zsh
+  nvim:
+    cmd: stow nvim
+
+  ghostty:
+    cmd: stow ghostty
 
   os:mac:brew:import:
     cmd: brew bundle --file {{.BREWFILE_PATH}} -f
