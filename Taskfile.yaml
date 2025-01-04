@@ -13,6 +13,9 @@ tasks:
   git:
     cmd: stow git
 
+  tmux:
+    cmd: stow tmux
+
   nvim:
     cmd: stow nvim
 
