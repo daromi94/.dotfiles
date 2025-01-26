@@ -10,11 +10,23 @@ alias gh='open "https://github.com/$(git config user.name)"'
 # tmux
 alias t='tmux'
 
-# java
+# runtimes
+
+## java
 alias j='jshell'
 
-# k8s
+# sre
+
+## k8s
 alias k='kubectl'
 
-# terraform
+## terraform
 alias tf='terraform'
+
+# editors
+
+## idea
+alias i='idea'
+
+## code
+alias c='code'
