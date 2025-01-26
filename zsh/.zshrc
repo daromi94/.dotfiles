@@ -15,7 +15,7 @@ readonly SDKMAN_INIT_PATH="$SDKMAN_DIR/bin/sdkman-init.sh"
 if [[ -s "$SDKMAN_INIT_PATH" ]]; then
 	source "$SDKMAN_INIT_PATH"
 else
-	echo "warning: missing sdkman-init script at '$SDKMAN_INIT_PATH'" >&2
+	echo "zshrc: $SDKMAN_INIT_PATH: missing init script" >&2
 fi
 
 # aliases
@@ -24,5 +24,5 @@ readonly ALIASES_PATH="$DOTFILES_DIR/zsh/.aliases"
 if [[ -f "$ALIASES_PATH" ]]; then
 	source "$ALIASES_PATH"
 else
-	echo "warning: missing aliases file at '$ALIASES_PATH'" >&2
+	echo "zshrc: $ALIASES_PATH: missing aliases file" >&2
 fi
