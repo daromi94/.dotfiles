@@ -11,7 +11,7 @@ safe_source() {
 readonly ZSH_THEME='robbyrussell'
 readonly plugins=(git)
 
-safe_source "$DOTFILES_DIR/zsh/.aliases"
 safe_source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 safe_source "$HOME/.sdkman/bin/sdkman-init.sh"
 safe_source "$HOME/.ghcup/env"
+safe_source "$DOTFILES_DIR/zsh/.aliases"

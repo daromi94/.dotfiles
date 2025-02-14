@@ -1,22 +1,16 @@
-# navigation
-alias ll='ls -la'
-alias dot='cd "$DOTFILES_DIR"'
+dot() { cd "$DOTFILES_DIR"; }
 
-# git
-alias gs='git status'
+alias gst='git status -sb'
+alias gc='git commit -m'
+alias gca='git commit --amend'
 alias gfs='xgfs'
-alias gh='open "https://github.com/$(git config user.name)"'
 
-# tmux
+gh() { open "https://github.com/$(git config user.name)"; }
+
 alias t='tmux'
-
-# runtimes
-alias j='jshell'
-
-# sre
-alias k='kubectl'
-alias tf='terraform'
-
-# editors
+alias v='nvim'
 alias i='idea'
 alias c='code'
+alias j='jshell'
+alias k='kubectl'
+alias tf='terraform'
