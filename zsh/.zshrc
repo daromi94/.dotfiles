@@ -1,28 +1,17 @@
-# oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
+safe_source() {
+	local -r file_path="$1"
+
+	if [[ -s "$file_path" ]]; then
+		source "$file_path"
+	else
+		echo ".zshrc: $file_path: empty or missing" >&2
+	fi
+}
 
 readonly ZSH_THEME='robbyrussell'
-
 readonly plugins=(git)
 
-source "$ZSH/oh-my-zsh.sh"
-
-# sdkman
-export SDKMAN_DIR="$HOME/.sdkman"
-
-readonly SDKMAN_INIT_PATH="$SDKMAN_DIR/bin/sdkman-init.sh"
-
-if [[ -s "$SDKMAN_INIT_PATH" ]]; then
-	source "$SDKMAN_INIT_PATH"
-else
-	echo "zshrc: $SDKMAN_INIT_PATH: missing init script" >&2
-fi
-
-# aliases
-readonly ALIASES_PATH="$DOTFILES_DIR/zsh/.aliases"
-
-if [[ -f "$ALIASES_PATH" ]]; then
-	source "$ALIASES_PATH"
-else
-	echo "zshrc: $ALIASES_PATH: missing aliases file" >&2
-fi
+safe_source "$DOTFILES_DIR/zsh/.aliases"
+safe_source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
+safe_source "$HOME/.sdkman/bin/sdkman-init.sh"
+safe_source "$HOME/.ghcup/env"
