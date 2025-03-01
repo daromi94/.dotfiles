@@ -1,14 +1,5 @@
 [user]
-email = davromero07@gmail.com
 name = daromi94
-[alias]
-last = log -1 HEAD --stat
+email = davromero07@gmail.com
 [core]
-autocrlf = input
 editor = nvim
-[fetch]
-prune = true
-[push]
-autoSetupRemote = true
-[pull]
-rebase = true
