@@ -1,11 +1,11 @@
 safe_source() {
-	local -r file_path="$1"
+    local -r file_path="$1"
 
-	if [[ -s "$file_path" ]]; then
-		source "$file_path"
-	else
-		echo ".zshrc: $file_path: empty or missing" >&2
-	fi
+    if [[ -s "$file_path" ]]; then
+        source "$file_path"
+    else
+        echo ".zshrc: $file_path: empty or missing" >&2
+    fi
 }
 
 readonly ZSH_THEME='robbyrussell'
