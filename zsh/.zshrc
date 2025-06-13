@@ -1,10 +1,10 @@
 safe_source() {
     local -r file_path="$1"
 
-    if [[ -s "$file_path" ]]; then
+    if [[ -f "$file_path" && -s "$file_path" ]]; then
         source "$file_path"
     else
-        echo ".zshrc: $file_path: empty or missing" >&2
+        echo ".zshrc: $file_path: unsuitable for sourcing" >&2
     fi
 }
 
