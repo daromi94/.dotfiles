@@ -21,9 +21,3 @@ tasks:
 
   ghostty:
     cmd: stow ghostty
-
-  os:mac:brew:import:
-    cmd: brew bundle --file {{.BREWFILE_PATH}} -f
-
-  os:mac:brew:export:
-    cmd: brew bundle dump --file {{.BREWFILE_PATH}} -f
