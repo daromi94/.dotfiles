@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
-readonly PROGRAM='xgfs'
+# xgfs: Interactive utility to select a recent Git commit using fzf and display its diff
 
+set -o nounset
 set -o pipefail
 
+readonly PROGRAM="${0##*/}"
+
 if ! git status >/dev/null 2>&1; then
-    echo "$PROGRAM: not a git repository (or any of the parent directories)" >&2
+    echo "$PROGRAM: not a git repository" >&2
     exit 128
 fi
 
-git log --format='%h^%cr^%s' | column -t -s '^' | fzf | awk '{print $1}' | xargs git show
+git log -n 100 --date=short --format='%h %cd %s' | fzf | awk '{print $1}' | xargs git show
