@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
-readonly PROGRAM='xlsof'
+# xlsof: Interactive utility to find files opened by a selected process command name
 
+set -o nounset
 set -o pipefail
+
+readonly PROGRAM="${0##*/}"
 
 process=$(ps axc | awk 'NR > 1' | awk '{print substr($0,index($0,$5))}' | sort -u | fzf)
 
@@ -11,9 +14,4 @@ if [[ -z "$process" ]]; then
     exit 64
 fi
 
-if ! lsof -c "$process"; then
-    echo "$PROGRAM: $process: failed to list open files" >&2
-    exit 70
-fi
-
-exit 0
+lsof -c "$process" || exit 70
