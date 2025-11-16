@@ -1,8 +1,5 @@
 version: "3"
 
-vars:
-  BREWFILE_PATH: os/mac/Brewfile
-
 tasks:
   default:
     cmd: task -a
