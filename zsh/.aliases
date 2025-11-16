@@ -1,16 +1,24 @@
-dot() { cd "$DOTFILES_DIR"; }
+#!/usr/bin/env bash
 
+dot() {
+    cd "$DOTFILES_DIR" || return 1
+}
+
+# Git
 alias gst='git status -sb'
 alias gc='git commit -m'
 alias gca='git commit --amend'
 alias gfs='xgfs'
 
-gh() { open "https://github.com/$(git config user.name)"; }
-
-alias t='tmux'
+# Editors & IDEs
 alias v='nvim'
 alias i='idea'
 alias c='code'
+
+# Runtime & infra
 alias j='jshell'
 alias k='kubectl'
 alias tf='terraform'
+
+# Misc
+alias t='tmux'
