@@ -4,7 +4,7 @@ safe_source() {
     if [[ -f "$file_path" && -s "$file_path" ]]; then
         . "$file_path"
     else
-        echo ".zshrc: $file_path: no such file or directory, or is empty" >&2
+        echo ".zshrc: $file_path: file not found or empty" >&2
         return 1
     fi
 }
