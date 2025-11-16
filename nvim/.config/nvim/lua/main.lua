@@ -8,7 +8,7 @@ vim.opt.relativenumber = true
 -- Show hidden characters (tabs, spaces, etc.)
 vim.opt.list = true
 
--- Highlight the current line
+-- Highlight current line
 vim.opt.cursorline = true
 
 -- Disable line wrapping
