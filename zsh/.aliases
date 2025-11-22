@@ -3,7 +3,7 @@ dot() {
 }
 
 # Git
-alias gst='git status -sb'
+alias gst='git status'
 alias gc='git commit -m'
 alias gca='git commit --amend'
 alias gfs='xgfs'
