@@ -14,9 +14,5 @@
   "telescope.nvim": {
     "branch": "master",
     "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026"
-  },
-  "vim-fugitive": {
-    "branch": "master",
-    "commit": "61b51c09b7c9ce04e821f6cf76ea4f6f903e3cf4"
   }
 }
