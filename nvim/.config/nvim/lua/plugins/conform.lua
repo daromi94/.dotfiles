@@ -8,8 +8,8 @@ return {
       conform.setup({
         formatters_by_ft = {
           c = { "clang-format" },
-          cpp = { "clang-format" },
           h = { "clang-format" },
+          cpp = { "clang-format" },
           hpp = { "clang-format" },
         },
         format_on_save = {
