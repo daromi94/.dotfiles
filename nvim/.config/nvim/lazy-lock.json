@@ -1,4 +1,8 @@
 {
+  "conform.nvim": {
+    "branch": "master",
+    "commit": "afce105eb47b0869dfafdac90d82f02ef2419d61"
+  },
   "lazy.nvim": {
     "branch": "main",
     "commit": "85c7ff3711b730b4030d03144f6db6375044ae82"
