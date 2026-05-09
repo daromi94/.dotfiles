@@ -1,19 +1,19 @@
 {
   "conform.nvim": {
     "branch": "master",
-    "commit": "afce105eb47b0869dfafdac90d82f02ef2419d61"
+    "commit": "dca1a190aa85f9065979ef35802fb77131911106"
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "85c7ff3711b730b4030d03144f6db6375044ae82"
+    "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97"
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800"
+    "commit": "e54f5bf5f12c560da31c17eee5b3e1bd369f3ff9"
   },
   "plenary.nvim": {
     "branch": "master",
-    "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509"
+    "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b"
   },
   "telescope.nvim": {
     "branch": "master",
